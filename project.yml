@@ -1,0 +1,99 @@
+name: PremedLog
+options:
+  bundleIdPrefix: com.premedlog
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+  developmentLanguage: en
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    # Simulator-only for now (no paid developer account). Ad-hoc "Sign to Run Locally".
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGN_IDENTITY: "-"
+    DEVELOPMENT_TEAM: ""
+    ENABLE_PREVIEWS: YES
+
+targets:
+  PremedLog:
+    type: application
+    platform: iOS
+    sources:
+      - path: PremedLog
+      - path: Shared
+      - path: PremedLog.storekit
+        buildPhase: none
+    info:
+      path: PremedLog/Info.plist
+      properties:
+        CFBundleDisplayName: PremedLog
+        LSRequiresIPhoneOS: true
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UIApplicationSceneManifest:
+          UIApplicationSupportsMultipleScenes: false
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        ITSAppUsesNonExemptEncryption: false
+        CFBundleURLTypes:
+          - CFBundleURLName: com.premedlog.app
+            CFBundleURLSchemes:
+              - premedlog
+    entitlements:
+      path: PremedLog/PremedLog.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.premedlog.shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.premedlog.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies:
+      - target: PremedLogWidget
+        embed: true
+
+  PremedLogWidget:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: Widget
+      - path: Shared
+    info:
+      path: Widget/Info.plist
+      properties:
+        CFBundleDisplayName: PremedLog
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    entitlements:
+      path: Widget/PremedLogWidget.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.premedlog.shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.premedlog.app.widget
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME: WidgetBackground
+    dependencies:
+      - sdk: WidgetKit.framework
+      - sdk: SwiftUI.framework
+
+schemes:
+  PremedLog:
+    build:
+      targets:
+        PremedLog: all
+        PremedLogWidget: all
+    run:
+      config: Debug
+      storeKitConfiguration: PremedLog.storekit
+      commandLineArguments:
+        "-sampleData": false
+        "-pro": false
+    archive:
+      config: Release

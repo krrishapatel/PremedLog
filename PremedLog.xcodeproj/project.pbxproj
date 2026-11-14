@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071EBE634B28F1F971EB30D6 /* QuickLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526CED917DFC818A210FA37A /* QuickLogView.swift */; };
+		0DE92FFB84814B649F5AF056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E40344ED2F5E14EDFBDBC74 /* Assets.xcassets */; };
+		1549135C116DDB59399150D0 /* EntitlementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0C3507C94F621DF1AC75EB /* EntitlementManager.swift */; };
+		16B67019B574EC32C9D7FD9C /* SnapshotService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA388E25709B497CFADB097 /* SnapshotService.swift */; };
+		245F70CF227E97C8935D2AAB /* ExperienceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A76373AE04F4307DA760FA5 /* ExperienceType.swift */; };
+		38635DC07569CC29977A3CFA /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AB061743985FBF0D04894 /* RootView.swift */; };
+		3A53F19B41DC2B4EAA8197B2 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAFA0596B2FFE1F2C336DED /* SampleData.swift */; };
+		3D4B54B1ABDEBE49C3A7D29F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7F5ADADF4DFB1245F976C6 /* DashboardView.swift */; };
+		4609C5BB402526C25A2540F5 /* ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727A050B8FE196E2CE0F1081 /* ExportView.swift */; };
+		483E5A61668F266D659DF1AF /* AMCASEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8CAE0D32DE62100ABBE7AF /* AMCASEntryView.swift */; };
+		4B6D311B5060DFB89D4821BB /* PremedLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB76D289F53D806D1A01734 /* PremedLogApp.swift */; };
+		545468A6EC611179669F445C /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB56A25248E8BE0B6D50A235 /* OnboardingView.swift */; };
+		59CC435E40AA8B76C168F2C0 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476F7B57CB2B59F19C13AE7E /* ActivitiesView.swift */; };
+		5C35D48B394256C4C76A2684 /* PremedLogWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0292A156958E015D9F1BFC3 /* PremedLogWidget.swift */; };
+		5FA1EEFD3D30C58BA7DD40F2 /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F323E10135478416607AF /* LogEntry.swift */; };
+		6394658F33746357DA4E304B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25BE9388A1876545F4035B /* SettingsView.swift */; };
+		63E79511B81ABC79012C0D45 /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A07152DB7DCCDA596EBFB45 /* ReminderService.swift */; };
+		6C77B219448437079C249B65 /* ApplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF98FED983B2F310A2166301 /* ApplicationView.swift */; };
+		71CE97506598DF198E6DDDA9 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E976AC7D4C27A5750E17C01 /* SharedModels.swift */; };
+		7E0CB90E56DCBAD2738C54C9 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0385C20D254D4F4498938A /* Components.swift */; };
+		7EB2A4A1DC21A67E0751CCB3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58DB8B0E41139583E7995C3 /* AppState.swift */; };
+		806E53F02A0EB47B4EFA6F8D /* ActivityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F13F8A1709CE57837EE6B0D /* ActivityDetailView.swift */; };
+		951F3E4B0E49AAAAB1CCB850 /* ExportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E84F31A82974DCB2F5D8E422 /* ExportService.swift */; };
+		987E4BBD787C306F4CA7B8F7 /* ActivityEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C76213352FCFBF6F5CD1C6F /* ActivityEditView.swift */; };
+		A023F8CB546CEE0B76735149 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B3AF6437193938AA291EC2 /* Activity.swift */; };
+		A5668B5C3D956210BEB6217B /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117B00CF38C0F1796EA4FA5B /* Stats.swift */; };
+		AD977CFD636BE4C727C8D33F /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F383B6680291DC0726D359 /* PaywallView.swift */; };
+		B132B351D040E18784DC6536 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81E1409852D349039AC2F3E9 /* WidgetKit.framework */; };
+		B19C00C27ABBEF0740F02B10 /* PremedLogWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 653860824DBCFDA823D105AA /* PremedLogWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BA6CF5D74BB29136AC35F731 /* SharedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E976AC7D4C27A5750E17C01 /* SharedModels.swift */; };
+		CFA1C392F09D66D0BAE19764 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF76436DE1C98AC6DA1DC06 /* SwiftUI.framework */; };
+		E4779B2C33E883B58CF41B16 /* ShiftTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFA659D7C60F8EF7FA9F85 /* ShiftTimer.swift */; };
+		E643B91E030DFA2C615C1AFE /* DraftService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059200751752B99CA861E202 /* DraftService.swift */; };
+		FE63ABCB34781C6DDA5A7708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5713DCFA387135E668B5422 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		396B9D7024B44C3FD4D70A1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 134F0797309B970D1D91CA6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 096AD00FB9A897251D30376E;
+			remoteInfo = PremedLogWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2451C28B695B78F7F8EBA4BB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B19C00C27ABBEF0740F02B10 /* PremedLogWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		059200751752B99CA861E202 /* DraftService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraftService.swift; sourceTree = "<group>"; };
+		117B00CF38C0F1796EA4FA5B /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		185CD71D994AF3DC4C13D98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		187F323E10135478416607AF /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
+		352156FC4B8C1115E8C5F133 /* PremedLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PremedLog.entitlements; sourceTree = "<group>"; };
+		35F383B6680291DC0726D359 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		3BA388E25709B497CFADB097 /* SnapshotService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotService.swift; sourceTree = "<group>"; };
+		3F4AE24DF4CCE4A26B699479 /* PremedLog.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PremedLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		476F7B57CB2B59F19C13AE7E /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
+		4E40344ED2F5E14EDFBDBC74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E976AC7D4C27A5750E17C01 /* SharedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedModels.swift; sourceTree = "<group>"; };
+		526CED917DFC818A210FA37A /* QuickLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLogView.swift; sourceTree = "<group>"; };
+		5CB76D289F53D806D1A01734 /* PremedLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremedLogApp.swift; sourceTree = "<group>"; };
+		653860824DBCFDA823D105AA /* PremedLogWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = PremedLogWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		727A050B8FE196E2CE0F1081 /* ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportView.swift; sourceTree = "<group>"; };
+		7B991E97DBCB2E0353EAFD38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		81E1409852D349039AC2F3E9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		8A07152DB7DCCDA596EBFB45 /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
+		8AAFA0596B2FFE1F2C336DED /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		8CF76436DE1C98AC6DA1DC06 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		8F13F8A1709CE57837EE6B0D /* ActivityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailView.swift; sourceTree = "<group>"; };
+		9A76373AE04F4307DA760FA5 /* ExperienceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceType.swift; sourceTree = "<group>"; };
+		9C76213352FCFBF6F5CD1C6F /* ActivityEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityEditView.swift; sourceTree = "<group>"; };
+		A58DB8B0E41139583E7995C3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A9B3AF6437193938AA291EC2 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		AE8BF5EA80E0E496B2D25142 /* PremedLogWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PremedLogWidget.entitlements; sourceTree = "<group>"; };
+		B5713DCFA387135E668B5422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD0385C20D254D4F4498938A /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		BD8CAE0D32DE62100ABBE7AF /* AMCASEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMCASEntryView.swift; sourceTree = "<group>"; };
+		CB56A25248E8BE0B6D50A235 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		D0292A156958E015D9F1BFC3 /* PremedLogWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremedLogWidget.swift; sourceTree = "<group>"; };
+		D34AB061743985FBF0D04894 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		DD69629B24FB3BDFC83526F1 /* PremedLog.storekit */ = {isa = PBXFileReference; path = PremedLog.storekit; sourceTree = "<group>"; };
+		DE7F5ADADF4DFB1245F976C6 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		DF98FED983B2F310A2166301 /* ApplicationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationView.swift; sourceTree = "<group>"; };
+		E84F31A82974DCB2F5D8E422 /* ExportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportService.swift; sourceTree = "<group>"; };
+		E8BFA659D7C60F8EF7FA9F85 /* ShiftTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftTimer.swift; sourceTree = "<group>"; };
+		EA25BE9388A1876545F4035B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EE0C3507C94F621DF1AC75EB /* EntitlementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43F3BCA89B7E9465DBC5F6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B132B351D040E18784DC6536 /* WidgetKit.framework in Frameworks */,
+				CFA1C392F09D66D0BAE19764 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00E0622A1D5AAE005BEEF9AF /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				35F383B6680291DC0726D359 /* PaywallView.swift */,
+			);
+			path = Paywall;
+			sourceTree = "<group>";
+		};
+		192F9D90B36EE9BFCA7D386F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F4AE24DF4CCE4A26B699479 /* PremedLog.app */,
+				653860824DBCFDA823D105AA /* PremedLogWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AD6170545934620F00A0ACC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E40344ED2F5E14EDFBDBC74 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3E67A232240ACA0AD1A04F18 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CB56A25248E8BE0B6D50A235 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		5ED048FBF17A0E60D0A65993 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A58DB8B0E41139583E7995C3 /* AppState.swift */,
+				059200751752B99CA861E202 /* DraftService.swift */,
+				EE0C3507C94F621DF1AC75EB /* EntitlementManager.swift */,
+				E84F31A82974DCB2F5D8E422 /* ExportService.swift */,
+				8A07152DB7DCCDA596EBFB45 /* ReminderService.swift */,
+				8AAFA0596B2FFE1F2C336DED /* SampleData.swift */,
+				E8BFA659D7C60F8EF7FA9F85 /* ShiftTimer.swift */,
+				3BA388E25709B497CFADB097 /* SnapshotService.swift */,
+				117B00CF38C0F1796EA4FA5B /* Stats.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		602D99659D6CF451C86C264D /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				476F7B57CB2B59F19C13AE7E /* ActivitiesView.swift */,
+				8F13F8A1709CE57837EE6B0D /* ActivityDetailView.swift */,
+				9C76213352FCFBF6F5CD1C6F /* ActivityEditView.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		84E2D59C02AD7C4E8F14768A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				727A050B8FE196E2CE0F1081 /* ExportView.swift */,
+				EA25BE9388A1876545F4035B /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8FB59F3B17849817A6A43ADA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5CB76D289F53D806D1A01734 /* PremedLogApp.swift */,
+				D34AB061743985FBF0D04894 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A0A072BE470084F7CAE210E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9B3AF6437193938AA291EC2 /* Activity.swift */,
+				9A76373AE04F4307DA760FA5 /* ExperienceType.swift */,
+				187F323E10135478416607AF /* LogEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9E644F49EB68E39E0CB1F3D /* PremedLog */ = {
+			isa = PBXGroup;
+			children = (
+				185CD71D994AF3DC4C13D98C /* Info.plist */,
+				352156FC4B8C1115E8C5F133 /* PremedLog.entitlements */,
+				8FB59F3B17849817A6A43ADA /* App */,
+				A0A072BE470084F7CAE210E5 /* Models */,
+				3AD6170545934620F00A0ACC /* Resources */,
+				5ED048FBF17A0E60D0A65993 /* Services */,
+				F692D3AB5748CA52E3DEB7F4 /* Views */,
+			);
+			path = PremedLog;
+			sourceTree = "<group>";
+		};
+		B07BA5DDCE484261B1FC3713 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BD8CAE0D32DE62100ABBE7AF /* AMCASEntryView.swift */,
+				DF98FED983B2F310A2166301 /* ApplicationView.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B58DF36794DBE2FBDEDA8598 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				B5713DCFA387135E668B5422 /* Assets.xcassets */,
+				7B991E97DBCB2E0353EAFD38 /* Info.plist */,
+				AE8BF5EA80E0E496B2D25142 /* PremedLogWidget.entitlements */,
+				D0292A156958E015D9F1BFC3 /* PremedLogWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		B7FDEEE330A68F0EBD5B66E3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BD0385C20D254D4F4498938A /* Components.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C6B6733A5E576DC3CCD20146 /* QuickLog */ = {
+			isa = PBXGroup;
+			children = (
+				526CED917DFC818A210FA37A /* QuickLogView.swift */,
+			);
+			path = QuickLog;
+			sourceTree = "<group>";
+		};
+		CE1C2D4AB627FD05C2479B14 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				DE7F5ADADF4DFB1245F976C6 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		F07FB4EF2309CF6F5A5369AB = {
+			isa = PBXGroup;
+			children = (
+				DD69629B24FB3BDFC83526F1 /* PremedLog.storekit */,
+				A9E644F49EB68E39E0CB1F3D /* PremedLog */,
+				F71700077B79917AB4B191F3 /* Shared */,
+				B58DF36794DBE2FBDEDA8598 /* Widget */,
+				FBB18C6F8184D8E52F42720B /* Frameworks */,
+				192F9D90B36EE9BFCA7D386F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F692D3AB5748CA52E3DEB7F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				602D99659D6CF451C86C264D /* Activities */,
+				B07BA5DDCE484261B1FC3713 /* Application */,
+				B7FDEEE330A68F0EBD5B66E3 /* Components */,
+				CE1C2D4AB627FD05C2479B14 /* Dashboard */,
+				3E67A232240ACA0AD1A04F18 /* Onboarding */,
+				00E0622A1D5AAE005BEEF9AF /* Paywall */,
+				C6B6733A5E576DC3CCD20146 /* QuickLog */,
+				84E2D59C02AD7C4E8F14768A /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F71700077B79917AB4B191F3 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4E976AC7D4C27A5750E17C01 /* SharedModels.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FBB18C6F8184D8E52F42720B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CF76436DE1C98AC6DA1DC06 /* SwiftUI.framework */,
+				81E1409852D349039AC2F3E9 /* WidgetKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		096AD00FB9A897251D30376E /* PremedLogWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3141BC4592F6C42CAEFE88A2 /* Build configuration list for PBXNativeTarget "PremedLogWidget" */;
+			buildPhases = (
+				1E6F3EFBFA6C0CC086860394 /* Sources */,
+				0FCE33A9750562F75CB97774 /* Resources */,
+				43F3BCA89B7E9465DBC5F6CD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PremedLogWidget;
+			packageProductDependencies = (
+			);
+			productName = PremedLogWidget;
+			productReference = 653860824DBCFDA823D105AA /* PremedLogWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		13FF6FAD3EB35853CD2E950D /* PremedLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D63E83455C3939695E9D033 /* Build configuration list for PBXNativeTarget "PremedLog" */;
+			buildPhases = (
+				CF8879144DC07BFF91623778 /* Sources */,
+				3EC06BD1D8919F66ECAAB3D7 /* Resources */,
+				2451C28B695B78F7F8EBA4BB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				832EF11EAAE12A2E6DD2D521 /* PBXTargetDependency */,
+			);
+			name = PremedLog;
+			packageProductDependencies = (
+			);
+			productName = PremedLog;
+			productReference = 3F4AE24DF4CCE4A26B699479 /* PremedLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		134F0797309B970D1D91CA6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					096AD00FB9A897251D30376E = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					13FF6FAD3EB35853CD2E950D = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 0A733774C8588250CE70B912 /* Build configuration list for PBXProject "PremedLog" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F07FB4EF2309CF6F5A5369AB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 192F9D90B36EE9BFCA7D386F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13FF6FAD3EB35853CD2E950D /* PremedLog */,
+				096AD00FB9A897251D30376E /* PremedLogWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FCE33A9750562F75CB97774 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE63ABCB34781C6DDA5A7708 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EC06BD1D8919F66ECAAB3D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DE92FFB84814B649F5AF056 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E6F3EFBFA6C0CC086860394 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C35D48B394256C4C76A2684 /* PremedLogWidget.swift in Sources */,
+				71CE97506598DF198E6DDDA9 /* SharedModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF8879144DC07BFF91623778 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				483E5A61668F266D659DF1AF /* AMCASEntryView.swift in Sources */,
+				59CC435E40AA8B76C168F2C0 /* ActivitiesView.swift in Sources */,
+				A023F8CB546CEE0B76735149 /* Activity.swift in Sources */,
+				806E53F02A0EB47B4EFA6F8D /* ActivityDetailView.swift in Sources */,
+				987E4BBD787C306F4CA7B8F7 /* ActivityEditView.swift in Sources */,
+				7EB2A4A1DC21A67E0751CCB3 /* AppState.swift in Sources */,
+				6C77B219448437079C249B65 /* ApplicationView.swift in Sources */,
+				7E0CB90E56DCBAD2738C54C9 /* Components.swift in Sources */,
+				3D4B54B1ABDEBE49C3A7D29F /* DashboardView.swift in Sources */,
+				E643B91E030DFA2C615C1AFE /* DraftService.swift in Sources */,
+				1549135C116DDB59399150D0 /* EntitlementManager.swift in Sources */,
+				245F70CF227E97C8935D2AAB /* ExperienceType.swift in Sources */,
+				951F3E4B0E49AAAAB1CCB850 /* ExportService.swift in Sources */,
+				4609C5BB402526C25A2540F5 /* ExportView.swift in Sources */,
+				5FA1EEFD3D30C58BA7DD40F2 /* LogEntry.swift in Sources */,
+				545468A6EC611179669F445C /* OnboardingView.swift in Sources */,
+				AD977CFD636BE4C727C8D33F /* PaywallView.swift in Sources */,
+				4B6D311B5060DFB89D4821BB /* PremedLogApp.swift in Sources */,
+				071EBE634B28F1F971EB30D6 /* QuickLogView.swift in Sources */,
+				63E79511B81ABC79012C0D45 /* ReminderService.swift in Sources */,
+				38635DC07569CC29977A3CFA /* RootView.swift in Sources */,
+				3A53F19B41DC2B4EAA8197B2 /* SampleData.swift in Sources */,
+				6394658F33746357DA4E304B /* SettingsView.swift in Sources */,
+				BA6CF5D74BB29136AC35F731 /* SharedModels.swift in Sources */,
+				E4779B2C33E883B58CF41B16 /* ShiftTimer.swift in Sources */,
+				16B67019B574EC32C9D7FD9C /* SnapshotService.swift in Sources */,
+				A5668B5C3D956210BEB6217B /* Stats.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		832EF11EAAE12A2E6DD2D521 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 096AD00FB9A897251D30376E /* PremedLogWidget */;
+			targetProxy = 396B9D7024B44C3FD4D70A1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2FFC9D86169ED2A8564FCFB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PremedLog/PremedLog.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PremedLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.premedlog.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BBF2C2FFD3B540B4C3F1F60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PremedLog/PremedLog.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PremedLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.premedlog.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9ECC16796364AE8CA64CB60B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget/PremedLogWidget.entitlements;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.premedlog.app.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E443D29286666E1ADD8E6F8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EDA7A2060BD312AECD48482B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = Widget/PremedLogWidget.entitlements;
+				INFOPLIST_FILE = Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.premedlog.app.widget;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB69F4813EEC8ED141C309C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A733774C8588250CE70B912 /* Build configuration list for PBXProject "PremedLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E443D29286666E1ADD8E6F8F /* Debug */,
+				FB69F4813EEC8ED141C309C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0D63E83455C3939695E9D033 /* Build configuration list for PBXNativeTarget "PremedLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FFC9D86169ED2A8564FCFB3 /* Debug */,
+				6BBF2C2FFD3B540B4C3F1F60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3141BC4592F6C42CAEFE88A2 /* Build configuration list for PBXNativeTarget "PremedLogWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDA7A2060BD312AECD48482B /* Debug */,
+				9ECC16796364AE8CA64CB60B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 134F0797309B970D1D91CA6F /* Project object */;
+}
